@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="TopToBottom" Layout="ForceDirected" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1 @25)" Category="CodeSchema_ProjectItem" Bounds="639.619493613804,650.901996407296,84.048000077079,25.998000077079" FilePath="$(VsSolution)\subset sum - backtracking\source.c" Label="source.c" />
+    <Node Id="(@11 @30)" Category="CodeSchema_ProjectItem" Bounds="58.5149937969097,622.857305006685,84.048000077079,25.998000077079" FilePath="$(VsSolution)\kruskal's algorithm\source.c" Label="source.c" />
+    <Node Id="(@13 @31)" Category="CodeSchema_ProjectItem" Bounds="63.1350900035747,390.860704852527,84.048000077079,25.998000077079" FilePath="$(VsSolution)\prim's algorithm\source.c" Label="source.c" />
+    <Node Id="(@17 @32)" Category="CodeSchema_ProjectItem" Bounds="90.9724828105816,506.859004929606,84.048000077079,25.998000077079" FilePath="$(VsSolution)\n queens\source.c" Label="source.c" />
+    <Node Id="(@19 @33)" Category="CodeSchema_ProjectItem" Bounds="404.287874351109,766.900296484375,84.0480000770791,25.998000077079" FilePath="$(VsSolution)\round robin tournament\source.c" Label="source.c" />
+    <Node Id="(@21 @34)" Category="CodeSchema_ProjectItem" Bounds="164.1186620098,738.855605083764,84.0480000770791,25.998000077079" FilePath="$(VsSolution)\optimal bst\source.c" Label="source.c" />
+    <Node Id="(@23 @35)" Category="CodeSchema_ProjectItem" Bounds="109.099184818127,257.042147859924,84.048000077079,25.998000077079" FilePath="$(VsSolution)\recursive minmax\source.c" Label="source.c" />
+    <Node Id="(@3 @26)" Category="CodeSchema_ProjectItem" Bounds="590.045396934117,385.59261635437,84.048000077079,25.998000077079" FilePath="$(VsSolution)\sorting\source.c" Label="source.c" />
+    <Node Id="(@5 @27)" Category="CodeSchema_ProjectItem" Bounds="619.670091758336,501.590916431449,84.048000077079,25.9980000770791" FilePath="$(VsSolution)\all pairs shortest path\source.c" Label="source.c" UseManualLocation="True" />
+    <Node Id="(@7 @28)" Category="CodeSchema_ProjectItem" Bounds="360.594579613613,242.619238628323,84.0480000770791,25.998000077079" FilePath="$(VsSolution)\fractional knapsack\source.c" Label="source.c" />
+    <Node Id="(@9 @29)" Category="CodeSchema_ProjectItem" Bounds="638.402226664225,251.774071250523,85.3280000770791,25.998000077079" FilePath="$(VsSolution)\traveling salesman problem\source.c" Label="Source.c" />
+    <Node Id="@10" Category="CodeSchema_PoundIncludeFile" Bounds="557.210559997559,211.773971250523,247.711333410412,85.998200077079" FilePath="$(VsSolution)\traveling salesman problem\traveling salesman problem.vcxproj" Group="Expanded" Label="traveling salesman problem.vcxproj" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="@12" Category="CodeSchema_PoundIncludeFile" Bounds="-6.2030902938659E-06,582.857205006685,201.078000077079,85.998200077079" FilePath="$(VsSolution)\kruskal's algorithm\kruskal's algorithm.vcxproj" Group="Expanded" Label="kruskal's algorithm.vcxproj" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" />
+    <Node Id="@14" Category="CodeSchema_PoundIncludeFile" Bounds="10.883423336908,350.860604852527,188.551333410412,85.998200077079" FilePath="$(VsSolution)\prim's algorithm\prim's algorithm.vcxproj" Group="Expanded" Label="prim's algorithm.vcxproj" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" />
+    <Node Id="@16" Category="CodeSchema_PoundIncludeFile" Bounds="334.236214846017,463.992047155109,148.624666743746,141.996000154158" FilePath="$(VsSolution)\common\common.vcxproj" Group="Expanded" Label="common.vcxproj" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" />
+    <Node Id="@18" Category="CodeSchema_PoundIncludeFile" Bounds="58.0324828105816,466.858904929606,149.928000077079,85.998200077079" FilePath="$(VsSolution)\n queens\n queens.vcxproj" Group="Expanded" Label="n queens.vcxproj" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" />
+    <Node Id="@2" Category="CodeSchema_PoundIncludeFile" Bounds="561.596160280471,610.901896407296,240.094666743746,85.998200077079" FilePath="$(VsSolution)\subset sum - backtracking\subset sum - backtracking.vcxproj" Group="Expanded" Label="subset sum - backtracking.vcxproj" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="@20" Category="CodeSchema_PoundIncludeFile" Bounds="331.131207684442,726.900196484375,230.361333410412,85.998200077079" FilePath="$(VsSolution)\round robin tournament\round robin tournament.vcxproj" Group="Expanded" Label="round robin tournament.vcxproj" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="@22" Category="CodeSchema_PoundIncludeFile" Bounds="125.410328676467,698.855505083764,161.464666743746,85.998200077079" FilePath="$(VsSolution)\optimal bst\optimal bst.vcxproj" Group="Expanded" Label="optimal bst.vcxproj" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" />
+    <Node Id="@24" Category="CodeSchema_PoundIncludeFile" Bounds="54.2191848181272,217.042063513756,193.808000077079,85.9982000770789" FilePath="$(VsSolution)\recursive minmax\recursive minmax.vcxproj" Group="Expanded" Label="recursive minmax.vcxproj" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="@37" Category="CodeSchema_ProjectItem" Bounds="355.451214846017,559.990047232188,106.194666743746,25.998000077079" FilePath="$(VsSolution)\common\union_find.h" Label="union_find.h" />
+    <Node Id="@39" Category="CodeSchema_ProjectItem" Bounds="355.451214846017,503.992047155109,97.4546667437457,25.998000077079" FilePath="$(VsSolution)\common\common.h" Label="common.h" />
+    <Node Id="@4" Category="CodeSchema_PoundIncludeFile" Bounds="562.727063600783,345.59251635437,138.684666743746,85.998200077079" FilePath="$(VsSolution)\sorting\sorting.vcxproj" Group="Expanded" Label="sorting.vcxproj" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="@6" Category="CodeSchema_PoundIncludeFile" Bounds="554.055091758335,461.590816431449,215.278000077079,85.998200077079" FilePath="$(VsSolution)\all pairs shortest path\all pairs shortest path.vcxproj" Group="Expanded" Label="all pairs shortest path.vcxproj" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="@8" Category="CodeSchema_PoundIncludeFile" Bounds="301.192912946946,202.619138628323,202.851333410412,85.998200077079" FilePath="$(VsSolution)\fractional knapsack\fractional knapsack.vcxproj" Group="Expanded" Label="fractional knapsack.vcxproj" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="@10" Target="(@9 @29)" Category="Contains" />
+    <Link Source="@10" Target="@39" Bounds="411.585418701172,297.772186279297,160.378265380859,197.788177490234" />
+    <Link Source="@12" Target="(@11 @30)" Category="Contains" />
+    <Link Source="@12" Target="@37" Bounds="201.077993873989,583.050652032022,145.489502481374,23.61783983332" />
+    <Link Source="@12" Target="@39" Bounds="201.077993873989,532.956326883555,157.366880743948,54.9356085909484" />
+    <Link Source="@14" Target="(@13 @31)" Category="Contains" />
+    <Link Source="@14" Target="@39" Bounds="199.167302149572,430.605138999229,165.868209859284,69.8921444646755" />
+    <Link Source="@16" Target="@37" Category="Contains" />
+    <Link Source="@16" Target="@39" Category="Contains" />
+    <Link Source="@18" Target="(@17 @32)" Category="Contains" />
+    <Link Source="@18" Target="@39" Bounds="207.960482887661,509.755392524368,138.496839728404,5.10714832159215" />
+    <Link Source="@2" Target="(@1 @25)" Category="Contains" />
+    <Link Source="@2" Target="@39" Bounds="443.130432128906,533.464782714844,122.542236328125,78.6921997070313" />
+    <Link Source="@20" Target="(@19 @33)" Category="Contains" />
+    <Link Source="@20" Target="@39" Bounds="446.311859130859,533.609008789063,27.8459167480469,193.291198730469" />
+    <Link Source="@22" Target="(@21 @34)" Category="Contains" />
+    <Link Source="@22" Target="@39" Bounds="245.718238957303,536.728839564333,140.987125418869,159.259813703525" />
+    <Link Source="@24" Target="(@23 @35)" Category="Contains" />
+    <Link Source="@24" Target="@39" Bounds="209.368530273438,303.040252685547,182.615173339844,193.795013427734" />
+    <Link Source="@4" Target="(@3 @26)" Category="Contains" />
+    <Link Source="@4" Target="@39" Bounds="437.512542724609,430.061584472656,126.615509033203,69.8209228515625" />
+    <Link Source="@6" Target="(@5 @27)" Category="Contains" />
+    <Link Source="@6" Target="@39" Bounds="461.902160644531,517.945495605469,92.1529541015625,4.00396728515625" />
+    <Link Source="@8" Target="(@7 @28)" Category="Contains" />
+    <Link Source="@8" Target="@39" Bounds="402.184509277344,288.617340087891,0.78497314453125,206.376373291016" />
+  </Links>
+  <Categories>
+    <Category Id="CodeSchema_PoundIncludeFile" Label="C++ Project File" BasedOn="File" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="C++ Project File" />
+    <Category Id="CodeSchema_ProjectItem" Label="Project Item" BasedOn="File" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Type" Icon="File" NavigationActionLabel="Project Items" />
+    <Category Id="Contains" Label="Contains" Description="Whether the source of the link contains the target object" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Contained By" IsContainment="True" OutgoingActionLabel="Contains" />
+    <Category Id="File" Label="File" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="File" NavigationActionLabel="Files" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="FilePath" Label="File Path" Description="File Path" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="Group" Label="Group" Description="Display the node as a group" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="Icon" Label="Icon" Description="Icon" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="Language" Label="Language" Description="Language" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="Assembly" ValueType="Uri" />
+    <Name Id="File" Label="File" ValueType="Uri" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(VsSolutionUri)/Subset Sum - Backtracking/Subset Sum - Backtracking.vcxproj" />
+    <Alias n="2" Id="(@1)" />
+    <Alias n="3" Uri="Assembly=$(VsSolutionUri)/Sorting/Sorting.vcxproj" />
+    <Alias n="4" Id="(@3)" />
+    <Alias n="5" Uri="Assembly=$(VsSolutionUri)/All Pairs Shortest Path/All Pairs Shortest Path.vcxproj" />
+    <Alias n="6" Id="(@5)" />
+    <Alias n="7" Uri="Assembly=$(VsSolutionUri)/Fractional Knapsack/Fractional Knapsack.vcxproj" />
+    <Alias n="8" Id="(@7)" />
+    <Alias n="9" Uri="Assembly=$(VsSolutionUri)/Traveling Salesman Problem/Traveling Salesman Problem.vcxproj" />
+    <Alias n="10" Id="(@9)" />
+    <Alias n="11" Uri="Assembly=$(VsSolutionUri)/Kruskal's Algorithm/Kruskal's Algorithm.vcxproj" />
+    <Alias n="12" Id="(@11)" />
+    <Alias n="13" Uri="Assembly=$(VsSolutionUri)/Prim's Algorithm/Prim's Algorithm.vcxproj" />
+    <Alias n="14" Id="(@13)" />
+    <Alias n="15" Uri="Assembly=$(VsSolutionUri)/common/common.vcxproj" />
+    <Alias n="16" Id="(@15)" />
+    <Alias n="17" Uri="Assembly=$(VsSolutionUri)/N Queens/N Queens.vcxproj" />
+    <Alias n="18" Id="(@17)" />
+    <Alias n="19" Uri="Assembly=$(VsSolutionUri)/Round Robin Tournament/Round Robin Tournament.vcxproj" />
+    <Alias n="20" Id="(@19)" />
+    <Alias n="21" Uri="Assembly=$(VsSolutionUri)/Optimal BST/Optimal BST.vcxproj" />
+    <Alias n="22" Id="(@21)" />
+    <Alias n="23" Uri="Assembly=$(VsSolutionUri)/Recursive MinMax/Recursive MinMax.vcxproj" />
+    <Alias n="24" Id="(@23)" />
+    <Alias n="25" Uri="File=$(VsSolutionUri)/Subset Sum - Backtracking/Source.c" />
+    <Alias n="26" Uri="File=$(VsSolutionUri)/Sorting/Source.c" />
+    <Alias n="27" Uri="File=$(VsSolutionUri)/All Pairs Shortest Path/Source.c" />
+    <Alias n="28" Uri="File=$(VsSolutionUri)/Fractional Knapsack/Source.c" />
+    <Alias n="29" Uri="File=$(VsSolutionUri)/Traveling Salesman Problem/Source.c" />
+    <Alias n="30" Uri="File=$(VsSolutionUri)/Kruskal's Algorithm/Source.c" />
+    <Alias n="31" Uri="File=$(VsSolutionUri)/Prim's Algorithm/Source.c" />
+    <Alias n="32" Uri="File=$(VsSolutionUri)/N Queens/Source.c" />
+    <Alias n="33" Uri="File=$(VsSolutionUri)/Round Robin Tournament/Source.c" />
+    <Alias n="34" Uri="File=$(VsSolutionUri)/Optimal BST/Source.c" />
+    <Alias n="35" Uri="File=$(VsSolutionUri)/Recursive MinMax/Source.c" />
+    <Alias n="36" Uri="File=$(VsSolutionUri)/common/union_find.h" />
+    <Alias n="37" Id="(@15 @36)" />
+    <Alias n="38" Uri="File=$(VsSolutionUri)/common/common.h" />
+    <Alias n="39" Id="(@15 @38)" />
+  </IdentifierAliases>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="C++ Project File" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_PoundIncludeFile')" />
+      <Setter Property="Background" Value="#FFEFEFEF" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Externals" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Externals')" />
+      <Setter Property="Background" Value="#FFA08080" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Source File" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_ProjectItem')" />
+      <Setter Property="Background" Value="#FFC0C0C0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="#include Group" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_PoundIncludeGroup')" />
+      <Setter Property="Background" Value="#FFEFEFEF" />
+    </Style>
+  </Styles>
+  <Paths>
+    <Path Id="VsSolution" Value="D:\Harsh\Documents\Visual Studio 2013\Projects\AOA" />
+    <Path Id="VsSolutionUri" Value="file:///D:/Harsh/Documents/Visual Studio 2013/Projects/AOA" />
+  </Paths>
+</DirectedGraph>

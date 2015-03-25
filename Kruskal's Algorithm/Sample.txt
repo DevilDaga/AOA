@@ -1,0 +1,24 @@
+Enter the number of vertices:   7
+1:      Input using Adjacency matrix
+2:      Input using edge endpoints
+Choice: 2
+Enter the endpoints ( -1 -1 -1 to stop ):
+1 2 7
+1 4 5
+2 3 8
+2 4 9
+2 5 7
+3 5 5
+4 5 15
+4 6 6
+5 6 8
+5 7 9
+6 7 11
+-1 -1 -1
+Edges in MST:
+#1  :   2  <=>  1    weight = 7
+#2  :   4  <=>  1    weight = 5
+#3  :   5  <=>  2    weight = 7
+#4  :   5  <=>  3    weight = 5
+#5  :   6  <=>  4    weight = 6
+#6  :   7  <=>  5    weight = 9

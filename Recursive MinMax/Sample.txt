@@ -1,0 +1,6 @@
+Minimum :       3
+Maximum :       9995
+
+
+Minimum :       7
+Maximum :       9981

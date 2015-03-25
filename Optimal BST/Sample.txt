@@ -1,0 +1,25 @@
+Enter the number of keys:       11
+Enter the keys and costs:
+1 15
+2 10
+3 5
+4 10
+5 20
+6 5
+7 10
+8 5
+9 5
+10 5
+11 10
+Optimal cost:   265.00
+The root is:    5
+5    left->     2
+5    right->    9
+2    left->     1
+2    right->    4
+9    left->     7
+9    right->    11
+4    left->     3
+7    left->     6
+7    right->    8
+11   left->     10
