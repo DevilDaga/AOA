@@ -29,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Traveling Salesman Problem"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Longest Common Subsequence", "Longest Common Subsequence\Longest Common Subsequence.vcxproj", "{F76E0859-5F6B-45DB-97C6-00D0074BF9EE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "15 Puzzle", "15 Puzzle\15 Puzzle.vcxproj", "{57033637-7FDD-4B4F-9F7D-1A6C5CA6E6C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -87,6 +89,10 @@ Global
 		{F76E0859-5F6B-45DB-97C6-00D0074BF9EE}.Debug|Win32.Build.0 = Debug|Win32
 		{F76E0859-5F6B-45DB-97C6-00D0074BF9EE}.Release|Win32.ActiveCfg = Release|Win32
 		{F76E0859-5F6B-45DB-97C6-00D0074BF9EE}.Release|Win32.Build.0 = Release|Win32
+		{57033637-7FDD-4B4F-9F7D-1A6C5CA6E6C5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{57033637-7FDD-4B4F-9F7D-1A6C5CA6E6C5}.Debug|Win32.Build.0 = Debug|Win32
+		{57033637-7FDD-4B4F-9F7D-1A6C5CA6E6C5}.Release|Win32.ActiveCfg = Release|Win32
+		{57033637-7FDD-4B4F-9F7D-1A6C5CA6E6C5}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

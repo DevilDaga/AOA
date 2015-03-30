@@ -20,11 +20,15 @@
 #define LOOP(i,n)			for ( (i) = 0; (i) != (n); ++(i) )
 #define RLOOP(i,n)			for ( (i) = (n) - 1; (i) != -1; --(i) )
 #ifndef min
-#define min(a,b)			(((a) < (b) ) ? (a) : (b));
+#define min(a,b)			(((a) < (b) ) ? (a) : (b))
 #endif
 #ifndef max
-#define max(a,b)			(((a) > (b) ) ? (a) : (b));
+#define max(a,b)			(((a) > (b) ) ? (a) : (b))
 #endif
+#ifndef mod
+#define mod(x)				(((x) < 0 ) ? ( -1 * (x) ) : (x))
+#endif // !mod
+
 
 void swap ( void *left, void *right, size_t n )
 {
