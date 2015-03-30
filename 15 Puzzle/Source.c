@@ -1,6 +1,6 @@
 #include "../common/common.h"
 
-#define	SIZE		4U
+#define SIZE	4U
 
 typedef enum
 {
@@ -17,6 +17,18 @@ typedef struct node_s
 	int **grid, x, y;
 	int cost;
 }node;
+
+node *make_node ( int **grid, int x, int y, int cost, node *p )
+{
+	node *result;
+	M_ALLOCATE ( result, 1 );
+	result->grid = grid;
+	result->cost = cost;
+	result->x = x;
+	result->y = y;
+	result->parent = p;
+	return result;
+}
 
 #define PARENT(x)		((size_t)((x) / 2))
 #define LCHILD(x)		(2 * (x))
@@ -118,11 +130,10 @@ node *solve ( int **grid, int x_blank, int y_blank )
 	size_t k = 0, top = 0;
 	node **heap, *T;
 	M_ALLOCATE ( heap, 1024 );
-	C_ALLOCATE ( T, 1 );
-	T->cost = manhattan ( grid, x_blank, y_blank );
-	T->grid == grid;
-	T->x = x_blank;
-	T->y = y_blank;
+	M_ALLOCATE ( T, 1 );
+	T = make_node ( grid, x_blank, y_blank,
+					manhattan ( grid, x_blank, y_blank ),
+					NULL );
 	if ( T->cost == 0 )
 		return T;
 	insert ( heap, k++, T );
@@ -137,11 +148,7 @@ node *solve ( int **grid, int x_blank, int y_blank )
 			int x = E->x, y = E->y;
 			int **child = move ( E->grid, &x, &y, i ),
 				cost = manhattan ( child, x, y );
-			X->grid = child;
-			X->cost = cost;
-			X->parent = E;
-			X->x = x;
-			X->y = y;
+			X = make_node ( grid, x, y, cost, E );
 			if ( cost == 0 )
 				return X;		// Solution found
 			insert ( heap, k++, X );
