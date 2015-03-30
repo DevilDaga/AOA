@@ -102,20 +102,28 @@ int **move ( int **grid, int *x_blank, int *y_blank, DIRECTION dir )
 	switch ( dir )
 	{
 		case UP:
-			x = *x_blank;
-			y = ( *y_blank + SIZE - 1 ) % SIZE;
+			if ( *x_blank == 0 )
+				return NULL;
+			x = *x_blank - 1;
+			y = *y_blank;
 			break;
 		case DOWN:
-			x = *x_blank;
-			y = ( *y_blank + SIZE + 1 ) % SIZE;
+			if ( *x_blank == SIZE - 1 )
+				return NULL;
+			x = *x_blank + 1;
+			y = *y_blank;
 			break;
 		case LEFT:
-			x = ( *x_blank + SIZE - 1 ) % SIZE;
-			y = *y_blank;
+			if ( *y_blank == 0 )
+				return NULL;
+			x = *x_blank;
+			y = *y_blank - 1;
 			break;
 		case RIGHT:
-			x = ( *x_blank + SIZE + 1 ) % SIZE;
-			y = *y_blank;
+			if ( *y_blank == SIZE - 1 )
+				return NULL;
+			x = *x_blank;
+			y = *y_blank + 1;
 			break;
 	}
 	swap ( &result[ x ][ y ], &result[ *x_blank ][ *y_blank ],
@@ -146,8 +154,11 @@ node *solve ( int **grid, int x_blank, int y_blank )
 			node *X;
 			C_ALLOCATE ( X, 1 );
 			int x = E->x, y = E->y;
-			int **child = move ( E->grid, &x, &y, i ),
-				cost = manhattan ( child, x, y );
+			int **child = move ( E->grid, &x, &y, i );
+			int cost;
+			if ( !child )
+				continue;
+			cost = manhattan ( child, x, y );
 			X = make_node ( grid, x, y, cost, E );
 			if ( cost == 0 )
 				return X;		// Solution found
@@ -174,4 +185,5 @@ void main ( )
 			}
 		}
 	}
+	solve ( grid, x, y );
 }
