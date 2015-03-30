@@ -1,18 +1,63 @@
 #include "../common/common.h"
 
-#define	SIZE		4
+#define	SIZE		4U
 
 typedef enum
 {
-	RESERVE,
+	RESERVE	=	0,
 	UP,
 	DOWN,
 	LEFT,
 	RIGHT
 }DIRECTION;
 
-int manhattan ( int grid[ SIZE ][ SIZE ],
-				int x_blank, int y_blank )
+typedef struct
+{
+	int **grid;
+	int cost;
+}node;
+
+#define PARENT(x)		((size_t)((x) / 2))
+#define LCHILD(x)		(2 * (x))
+#define RCHILD(x)		(2 * (x) + 1)
+
+void min_heapify ( node *heap, size_t i, size_t n )
+{
+	size_t l = LCHILD ( i ),
+		r = RCHILD ( i ),
+		largest;
+	if ( l < n && heap[ l ].cost < heap[ i ].cost )
+		largest = l;
+	else
+		largest = i;
+	if ( r < n && heap[ r ].cost < heap[ largest ].cost )
+		largest = r;
+	if ( largest != i )
+	{
+		swap ( heap + i, heap + largest, sizeof *heap );
+		min_heapify ( heap, largest, n );
+	}
+}
+
+void insert ( node *heap, size_t n, node ele )
+{
+	heap[ n ] = ele;
+	while ( heap[ n ].cost > heap[ PARENT ( n ) ].cost )
+	{
+		swap ( heap + n, heap + PARENT ( n ), sizeof *heap );
+		n = PARENT ( n );
+	}
+}
+
+node extract ( node *heap, size_t n )
+{
+	node result = heap[ 0 ];
+	heap[ 0 ] = heap[ n - 1 ];
+	min_heapify ( heap, 0, n - 1 );
+	return result;
+}
+
+int manhattan ( int **grid, int x_blank, int y_blank )
 {
 	int result = 0, i, j;
 	LOOP ( i, SIZE )
@@ -32,11 +77,15 @@ int manhattan ( int grid[ SIZE ][ SIZE ],
 	return result;
 }
 
-int **move ( int grid[ SIZE ][ SIZE ],
-			 int x_blank, int y_blank, DIRECTION dir )
+int **move ( int **grid, int x_blank, int y_blank, DIRECTION dir )
 {
-	int result[ SIZE ][ SIZE ], x, y;
-	memcpy ( result, grid, sizeof grid );
+	int **result, x, y, i;
+	M_ALLOCATE ( result, SIZE );
+	LOOP ( i, SIZE )
+	{
+		C_ALLOCATE ( result[ i ], SIZE );
+		memcpy ( result[ i ], grid[ i ], SIZE * sizeof **grid );
+	}
 	switch ( dir )
 	{
 		case UP:
@@ -61,10 +110,15 @@ int **move ( int grid[ SIZE ][ SIZE ],
 	return result;
 }
 
-DIRECTION *solve ( int grid[ SIZE ][ SIZE ],
-				   int x_blank, int y_blank )
+DIRECTION *solve ( int **grid, int x_blank, int y_blank )
 {
-
+	size_t k = 0, top = 0;
+	DIRECTION *result;
+	int ***stack;
+	M_ALLOCATE ( stack, 1024 );
+	C_ALLOCATE ( result, 256 );
+	stack[ top++ ] = grid;
+	return result;
 }
 
 void main ( )
