@@ -152,12 +152,12 @@ node *solve ( int **grid, int x_blank, int y_blank )
 		for ( i = 1; i != 5; ++i )
 		{
 			node *X;
-			C_ALLOCATE ( X, 1 );
 			int x = E->x, y = E->y;
 			int **child = move ( E->grid, &x, &y, i );
 			int cost;
 			if ( !child )
 				continue;
+			C_ALLOCATE ( X, 1 );
 			cost = manhattan ( child, x, y );
 			X = make_node ( grid, x, y, cost, E );
 			if ( cost == 0 )
@@ -170,8 +170,9 @@ node *solve ( int **grid, int x_blank, int y_blank )
 
 void main ( )
 {
-	int grid[ SIZE ][ SIZE ] = { 0 },
-		x = 0, y = 0, i, j;
+	int **grid, x = 0, y = 0, i, j;
+	M_ALLOCATE ( grid, SIZE );
+	blank_graph ( grid, SIZE );
 	puts ( "Enter the grid (0 for blank tile):" );
 	LOOP ( i, SIZE )
 	{
@@ -186,4 +187,6 @@ void main ( )
 		}
 	}
 	solve ( grid, x, y );
+	getchar ( );
+	getchar ( );
 }
